@@ -1083,36 +1083,47 @@
           CHAPTER 13: IMPORATNT ILLUSTRATIONS
         </h4>
         <div id="chapter13" class="chapter-content">
-          <div class="accordion accordion-flush" id="accordionFlushExample12">
+          <div class="accordion accordion-flush" id="accordionFlushExample13">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwentyOne"
+                  data-bs-target="#flush-collapseTwentyThree"
                   aria-expanded="false"
-                  aria-controls="flush-collapseTwentyOne"
+                  aria-controls="flush-collapseTwentyThree"
                 >
                   Illustrate the difference between Spontaneous breathing and
                   mechanical inflations?
                 </button>
               </h2>
               <div
-                id="flush-collapseTwentyOne"
+                id="flush-collapseTwentyThree"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample12"
+                data-bs-parent="#accordionFlushExample13"
               >
                 <div class="accordion-body">
                   <img
                     src="images/ch13.jpg"
-                    alt="Description of the image"
+                    class="d-none d-md-inline-block"
+                    alt="Chapter 13"
                     style="width: 100%; max-width: 500px; margin-bottom: 15px"
                   />
                   <img
                     src="images/ch13_2.jpg"
-                    alt="Description of the image"
+                    class="d-none d-md-inline-block"
+                    alt="Chapter 13"
                     style="width: 100%; max-width: 500px; margin-bottom: 15px"
+                  />
+                  <!-- الصورة التي تفتح في مودال -->
+                  <img
+                    src="images/Ch13_big.jpg"
+                    class="d-md-none d-block"
+                    alt="Chapter 13"
+                    style="width: 100%; max-width: 500px; margin-bottom: 15px; cursor: pointer !important;"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
                   />
                   <p>
                     Spontaneous breathing (60 breaths per minute) (left) and
@@ -1133,6 +1144,47 @@
             >
               For full Chapter review, please click here
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- المودال -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-light">
+            <h5 class="modal-title" id="imageModalLabel">
+              Chapter 13 Illustration
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/Ch13_big.jpg"
+              alt="Chapter 13"
+              style="width: 100%"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
