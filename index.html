@@ -98,13 +98,21 @@
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      .chapter-content {
+        display: none; /* إخفاء المحتوى بشكل افتراضي */
       }
     </style>
   </head>
   <body>
     <div class="container my-4 mt-4">
       <!-- اسم الكتاب -->
-      <h2 class="text-center mb-3 chapter-title" style="cursor: auto;">
+      <h2
+        class="text-center mb-3 chapter-title"
+        style="cursor: auto; font-size: 22px !important"
+      >
         QUESTIONS AND ANSWERS IN NEONATAL VENTILATION
       </h2>
 
@@ -143,7 +151,7 @@
         <h4 class="chapter-title" onclick="toggleChapter('chapter1')">
           CHAPTER 1: PHYSIOLOGY OF RESPIRATION
         </h4>
-        <div id="chapter1">
+        <div id="chapter1" class="chapter-content">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -226,7 +234,7 @@
         <h4 class="chapter-title" onclick="toggleChapter('chapter2')">
           CHAPTER 2: BLOOD GAS
         </h4>
-        <div id="chapter2">
+        <div id="chapter2" class="chapter-content">
           <div class="accordion accordion-flush" id="accordionFlushExample2">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -314,7 +322,7 @@
         <h4 class="chapter-title" onclick="toggleChapter('chapter3')">
           CHAPTER 3: NON-INVASIVE VENTILATION
         </h4>
-        <div id="chapter3">
+        <div id="chapter3" class="chapter-content">
           <div class="accordion accordion-flush" id="accordionFlushExample3">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -397,7 +405,7 @@
         <h4 class="chapter-title" onclick="toggleChapter('chapter4')">
           CHAPTER 4: LOOPS AND GRAPHICS
         </h4>
-        <div id="chapter4">
+        <div id="chapter4" class="chapter-content">
           <div class="accordion accordion-flush" id="accordionFlushExample4">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -473,31 +481,671 @@
           </div>
         </div>
       </div>
+
+      <!-- الفصل الخامس -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter5')">
+          CHAPTER 5: ASSISTED VENTILATION
+        </h4>
+        <div id="chapter5" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample5">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTen"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTen"
+                >
+                  What are the technological challenges on mechanical ventilator
+                  design in neonates?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTen"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample5"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Small infants with poorly compliant lungs have very short
+                    time constants and normally have rapid respiratory rates
+                    with very short inspiratory times to match their lung
+                    mechanics. They have limited muscle strength and a very
+                    compliant chest wall, so they struggle to develop adequate
+                    inspiratory flow or pressure. This situation imposes great
+                    technological challenges on device design, especially in
+                    terms of triggering ventilator inflations in synchrony with
+                    the onset of inspiratory effort, inflation termination, and
+                    tidal volume (VT) measurement. These technological
+                    challenges have largely been overcome in modern ventilators
+                    but remain a problem in some older devices still in use.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل السادس -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter6')">
+          CHAPTER 6: MODES OF VENTILATION
+        </h4>
+        <div id="chapter6" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample6">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseElevn"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseElevn"
+                >
+                  What is the difference between a breath and inflation?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseElevn"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample6"
+              >
+                <div class="accordion-body">
+                  <p>
+                    A breath/inflation is defined as one cycle of positive flow
+                    (inspiration) and negative flow (expiration) defined in
+                    terms of the flow–time curve. A breath is a spontaneous
+                    breath. An inflation (followed by exhalation) is a
+                    ventilator generated “breath”.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwelve"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwelve"
+                >
+                  What is the difference between a “spontaneous breath” and
+                  mandatory inflation?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwelve"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample6"
+              >
+                <div class="accordion-body">
+                  <p>
+                    A“spontaneous breath” (inflation) is one for which inflation
+                    is started (triggered) and stopped (cycled) by the patient.
+                    A mandatory inflation is one for which inflation is either
+                    started or stopped (or both) by the ventilator independent
+                    of the patient.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل السابع -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter7')">
+          CHAPTER 7: SYNCHRONIZED VENTILATION
+        </h4>
+        <div id="chapter7" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample7">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThirteenth"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThirteenth"
+                >
+                  What is intermittent mandatory ventilation (IMV)?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThirteenth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample7"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Pressure-controlled, time-cycled mode of ventilation that
+                    provides a set number of “mandatory” mechanical inflations.
+                    The patient continues to breathe spontaneously, using the
+                    fresh gas flow available in the ventilator circuit. However,
+                    without synchronization of the infant’s spontaneous effort,
+                    the irregular respiratory pattern of a newborn baby leads to
+                    frequent asynchrony between the infant and the ventilator,
+                    sometimes resulting in a ventilator inflation that occurs
+                    just as the infant is exhaling.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFourteenth"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFourteenth"
+                >
+                  What are the complications of asynchrony?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFourteenth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample7"
+              >
+                <div class="accordion-body">
+                  <p>
+                    High airway pressure, pneumothorax, poor oxygenation, and
+                    large fluctuations in intracranial pressures leading to
+                    increased risk of intraventricular hemorrhage were observed
+                    with such asynchrony. In the past, heavy sedation or muscle
+                    paralysis was often necessary to prevent the baby from
+                    “fighting the ventilator”.These interventions resulted in
+                    greater dependence on respiratory support, lack of
+                    respiratory muscle training, generalized edema, impaired gut
+                    motility, and inability to assess the infant’s neurologic
+                    status.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل الثامن -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter8')">
+          CHAPTER 8: HIGH FREQUENCY VENTILATION
+        </h4>
+        <div id="chapter8" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample8">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFifthteenth"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFifthteenth"
+                >
+                  What are the types of HFV?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFifthteenth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample8"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Two types of HFV are commonly used: high frequency
+                    oscillatory ventilation (HFOV), which is produced by a
+                    device that moves gas back and forth at the airway opening,
+                    resulting in limited bulk gas flow; and high-frequency jet
+                    ventilation (HFJV), which is produced by ventilators that
+                    deliver a high-velocity jet of gas directly into the airway
+                    and have passive exhalation. A third type, high-frequency f
+                    low interruption (HFFI), also known as high-frequency
+                    percussive ventilation (HFPV), is less well studied and is
+                    less commonly employed. HFFI generates pulses of fresh gas
+                    similar to HFJV and also uses passive exhalation, but unlike
+                    HFJV, it does not produce a high velocity stream of gas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل التاسع -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter9')">
+          CHAPTER 9: LUNG PROTECTIVE VENTILATION
+        </h4>
+        <div id="chapter9" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample9">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSixteenth"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSixteenth"
+                >
+                  What is the evidence that volutrauma is the cause of
+                  ventilator induced lung injury (VILI)?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSixteenth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample9"
+              >
+                <div class="accordion-body">
+                  <p>
+                    In 1974, Webb and Tierney showed that the application of
+                    high peak inflation pressures during conventional mechanical
+                    ventilation resulted in alveolar and perivascular edema,
+                    leading to deteriorating lung mechanics and, ultimately,
+                    death in healthy rats. Additional experiments showed that
+                    application of high peak inflation pressures will damage the
+                    lung only if the thorax can freely expand and volume can
+                    enter the lungs. Preventing this expansion by thoracic
+                    strapping (low volume, high pressure) will protect the lung
+                    against VILI. These results clearly indicate that the volume
+                    entering the lungs (volutrauma) and not the pressure applied
+                    to the lungs causes ventilator induced lung injury (VILI).
+                    The importance of volutrauma in the development of VILI has
+                    also been confirmed in preterm animal models.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل العاشر -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter10')">
+          CHAPTER 10: SURFACTANT
+        </h4>
+        <div id="chapter10" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample10">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeventeenth"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSeventeenth"
+                >
+                  What is the function of surfactant?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSeventeenth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample10"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Surfactant greatly reduces the surface tension on the inner
+                    surface of the alveoli, thus preventing the alveoli from
+                    collapsing during expiration.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEighteenth"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseEighteenth"
+                >
+                  What is the composition of pulmonary surfactant?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseEighteenth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample10"
+              >
+                <div class="accordion-body">
+                  <p>
+                    80% phospholipids, 8% neutral lipids, and 12% protein. The
+                    predominant class of phospholipid (nearly 60%) is
+                    dipalmitoyl phosphatidylcholine (DPPC), with lesser amounts
+                    of unsaturated phosphatidylcholine compounds (25%),
+                    phosphatidylglycerol (15%), and phosphatidylinositol.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل الحادي عشر -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter11')">
+          CHAPTER 11: SURFACTANT
+        </h4>
+        <div id="chapter11" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample11">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseNineteenth"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseNineteenth"
+                >
+                  What are the causes of Persistent pulmonary hypertension of
+                  the newborn (PPHN)?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseNineteenth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample11"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Persistent pulmonary hypertension of the newborn (PPHN) can
+                    be idiopathic (without lung disease) or secondary to
+                    parenchymal (such as meconium aspiration syndrome) or
+                    hypoplastic (such as congenital diaphragmatic hernia) lung
+                    conditions. Hypoxemic respiratory failure (HRF) is often
+                    associated with PPHN.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwenty"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwenty"
+                >
+                  How does PPHN present?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwenty"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample11"
+              >
+                <div class="accordion-body">
+                  <p>
+                    The typical presentation of PPHN is based on primary
+                    pathology but is often associated with labile hypoxemia and,
+                    in some cases, differential cyanosis. Cyanosis is secondary
+                    to extrapulmonary right-to-left shunting at the patent
+                    foramen ovale (PFO) and patent ductus arteriosus (PDA).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل الثاني عشر -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter12')">
+          CHAPTER 12: VENTILATION STRATEGY
+        </h4>
+        <div id="chapter12" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample12">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwentyOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwentyOne"
+                >
+                  What is the primary objective in the management of neonatal
+                  RDS?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwentyOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample12"
+              >
+                <div class="accordion-body">
+                  <p>
+                    The primary objective in the management of neonatal RDS is
+                    to minimize the initial use and/or duration of exposure to
+                    any form of invasive mechanical ventilation through
+                    aggressive application of early noninvasive modes of
+                    respiratory support, as well the application of written
+                    guidelines to promote weaning and extubation from mechanical
+                    ventilation when applied.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwentyTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwentyTwo"
+                >
+                  What is the key to the management of RDS?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwentyTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample12"
+              >
+                <div class="accordion-body">
+                  <p>
+                    The key to RDS management includes recognition of the
+                    predominant underlying pulmonary pathophysiology, which is
+                    typically a diffuse “alveolar” disease, coupled with the
+                    underlying potential to disrupt immature lung development
+                    through pathways leading to or associated with VILI. The
+                    management of the very preterm infant is additionally
+                    confounded by the underlying fetal inflammatory milieu that
+                    is often present in association with clinical/subclinical
+                    chorioamnionitis and impaired intrauterine growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفصل الثالث عشر -->
+      <div class="chapter-card">
+        <h4 class="chapter-title" onclick="toggleChapter('chapter13')">
+          CHAPTER 13: IMPORATNT ILLUSTRATIONS
+        </h4>
+        <div id="chapter13" class="chapter-content">
+          <div class="accordion accordion-flush" id="accordionFlushExample12">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwentyOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwentyOne"
+                >
+                  Illustrate the difference between Spontaneous breathing and
+                  mechanical inflations?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwentyOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample12"
+              >
+                <div class="accordion-body">
+                  <img
+                    src="images/ch13.jpg"
+                    alt="Description of the image"
+                    style="width: 100%; max-width: 500px; margin-bottom: 15px"
+                  />
+                  <img
+                    src="images/ch13_2.jpg"
+                    alt="Description of the image"
+                    style="width: 100%; max-width: 500px; margin-bottom: 15px"
+                  />
+                  <p>
+                    Spontaneous breathing (60 breaths per minute) (left) and
+                    mechanical inflations (60 inflations per minute),
+                    inspiratory time 0.4 seconds (right).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- رابط لعرض الفصل كاملاً -->
+          <div class="text-center mt-4">
+            <a
+              href="https://tkween.com.sa/products/quistions-and-answers-in-neonatal-ventilation-neos"
+              class="btn btn-outline-primary"
+              target="_blank"
+            >
+              For full Chapter review, please click here
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
-      // دالة لفتح أو إغلاق جميع القوائم في الفصل
+      // دالة لفتح أو إغلاق محتوى الفصل
       function toggleChapter(chapterId) {
         const chapter = document.getElementById(chapterId);
-        const accordionItems = chapter.querySelectorAll(".accordion-collapse");
-
-        let isOpen = false;
-        accordionItems.forEach((item) => {
-          if (item.classList.contains("show")) {
-            isOpen = true;
-          }
-        });
-
-        if (isOpen) {
-          // إذا كانت القوائم مفتوحة، أغلقها
-          accordionItems.forEach((item) => {
-            new bootstrap.Collapse(item, { toggle: false }).hide();
-          });
+        if (chapter.style.display === "none" || chapter.style.display === "") {
+          chapter.style.display = "block";
         } else {
-          // إذا كانت القوائم مغلقة، افتحها
-          accordionItems.forEach((item) => {
-            new bootstrap.Collapse(item, { toggle: false }).show();
-          });
+          chapter.style.display = "none";
         }
       }
     </script>
